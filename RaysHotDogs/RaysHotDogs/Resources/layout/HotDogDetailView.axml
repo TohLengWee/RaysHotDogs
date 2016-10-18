@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainScrollView"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="#FCD972"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+        <ImageView
+            android:src="@android:drawable/ic_menu_gallery"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:id="@+id/hotDogImageView"
+            android:layout_gravity="center_horizontal" />
+        <TextView
+            android:text="Hot dog name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/hotDogNameTextView"
+            android:paddingTop="20dp"
+            android:textSize="20dp"
+            android:textColor="@android:color/holo_green_light" />
+        <TextView
+            android:text="Short Description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/shortDescriptionTextView"
+            android:textColor="@android:color/holo_blue_light"
+            android:paddingTop="20dp"
+            android:textSize="16dp" />
+        <TextView
+            android:text="Adult education is essential for Democracy of India. The number of grown up illiterates is great. All college and senior School students should come forward to visit villages in the summer vacation. Each one will teach one there. This will remove illiteracy and strengthen our democracy."
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/descriptionTextView"
+            android:editable="false"
+            android:textColor="@android:color/holo_red_light"
+            android:paddingTop="20dp"
+            android:textSize="12dp" />
+        <TextView
+            android:text="Price: 1024"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/priceTextView"
+            android:textColor="@android:color/holo_orange_light"
+            android:paddingTop="20dp"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0.0dp">
+            <Button
+                android:text="Cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/cancelButton"
+                android:layout_marginTop="20dp" />
+            <EditText
+                android:inputType="number"
+                android:text="1"
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:id="@+id/amountEditText"
+                android:background="@android:color/white"
+                android:textColor="@android:color/black" />
+            <Button
+                android:text="Order now!"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/orderButton" />
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>
